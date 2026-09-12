@@ -1,1 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.score-card {
+    flex: 1;
+    background: #f1f2f6;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #636e72;
+}
+
+.score-card span:last-child {
+    font-size: 1.2rem;
+    margin-top: 4px;
+    color: #2d3436;
+}
+
+.status-container {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #2d3436;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #0984e3;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    background-color: #f8f9fa;
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #dfe6e9;
+    transition: all 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #dfe6e9;
+    border-color: #b2bec3;
+}
+
+.cell.x {
+    color: #0984e3;
+}
+
+.cell.o {
+    color: #e17055;
+}
+
+#resetBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#resetBtn:hover {
+    background-color: #00a884;
+}
